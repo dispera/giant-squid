@@ -45,7 +45,7 @@ RUN curl -SLO https://download.litecoin.org/litecoin-${LITECOIN_VERSION}/linux/l
   && tar --strip=2 -xzf *.tar.gz -C /usr/local/bin \
   && rm *.tar.gz
 
-# COPY docker-entrypoint.sh /entrypoint.sh
+COPY docker-entrypoint.sh /entrypoint.sh
 
 VOLUME ["/home/litecoin/.litecoin"]
 
@@ -54,5 +54,5 @@ EXPOSE 9332 9333 19332 19333 19444
 # The source image has an entrypoint script which drops root user to litecoin,
 # when the command passed is 'litecoind', as checked on the Dockerfile step: 
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["litecoind", "-printtoconsole"]

@@ -8,5 +8,6 @@ it's resources based on the contents `ci_name` variable. And I chose to append "
 
 E.g. here we use `ci_name` of `octopus`, and end up with resources named `octopus-ci`.
 
-I tested it on my personal AWS account.
+---
+I tested it on my personal AWS account.  
 For examples I just used the official terraform documentation.
