@@ -5,7 +5,7 @@ services:
   - docker
 
 env:
-  - IMAGE_NAME="dispera/litecoin-squid" IMAGE_TAG="latest"
+  - IMAGE_NAME="diegos/litecoin-squid" IMAGE_TAG="latest"
 
 script:
   # Building the image
