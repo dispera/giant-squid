@@ -1,0 +1,8 @@
+# This ended up in the script so not needed, left it for reference.
+apiVersion: kind.x-k8s.io/v1alpha4
+kind: Cluster
+nodes:
+- role: control-plane
+  extraMounts:
+    - hostPath: /tmp/litecoin
+      containerPath: /home/litecoin/.litecoin
