@@ -73,8 +73,13 @@ libwind0-heimdal      7.7.0+dfsg-1ubuntu1                 CVE-2021-3671     Low
 login                 1:4.8.1-1ubuntu5.20.04.1            CVE-2013-4235     Low
 passwd                1:4.8.1-1ubuntu5.20.04.1            CVE-2013-4235     Low
 ```
-
 ## ex2
+Check `ex2-k8s` folder.  
+I added a service as it is required to define a StatefulSet, though we don't need it.
+I was not aware of this constraint but seems like even a placeholder service needs to be defined which is what I did:
+ref: https://github.com/kubernetes/kubernetes/issues/69608
+
+## ex3
 I picked Gitlab Sunday night and was liking it until.. they blocked my account for no reason and still could not get it unblocked -.-
 Got "Your account has been blocked. Please contact your GitLab administrator if you think this is an error."
 And that's on my Gitlab Ultimate trial. 
@@ -88,21 +93,18 @@ The travis CI build passes OK (exit code 0). Anchore scan only shows a `warn` st
 
 I left the output of a Travis Build on `travis-build.out`
 
-## ex3
-
-
 ## ex4
-Check `ex4-text-manupulation` folder.
+Check `ex4-text-manupulation` folder.  
 I found a page with the original poem about our favourite octopus, and had to filter that page for it.
 I quickly used grep, sed, cut for that. 
 
 ## ex5
-Check `ex5-text-manupulation` folder.
+Check `ex5-text-manupulation` folder.  
 Did the same, this time with python. Nothing fancy, using requests and BeautifulSoup from official docs.
 
 
 ## ex6
-Check `ex6-terraform` folder.
+Check `ex6-terraform` folder.  
 I did the configuration, module, and added a README for the root and for the module.
 ---
 
