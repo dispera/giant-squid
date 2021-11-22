@@ -1,0 +1,17 @@
+# language: node_js
+
+services:
+  - docker
+
+env:
+  - IMAGE_NAME="btodhunter/anchore-ci-demo" IMAGE_TAG="travisci"
+
+script:
+  # Building the image
+  - docker build -t "${IMAGE_NAME}:ci" .
+  # Doing the inline scan with anchore
+  - curl -s https://ci-tools.anchore.io/inline_scan-latest | bash -s -- "${IMAGE_NAME}:ci"
+  # Tagging and pushing my image to Docker Hub
+  - echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
+  - docker tag "${IMAGE_NAME}:ci" "${IMAGE_NAME}:${IMAGE_TAG}"
+  - docker push "${IMAGE_NAME}:${IMAGE_TAG}"

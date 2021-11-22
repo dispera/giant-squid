@@ -6,8 +6,17 @@ For testing the image security with anchore, I first ran `anchore/inline-scan`:
 `sudo docker build -t lite-new:latest -f Dockerfile .`
 `curl -s https://ci-tools.anchore.io/inline_scan-latest | sudo bash -s -- -f -d Dockerfile lite-d:latest`
 
+At this point I found `anchore inline scan` was being deprecated in a Jan 2022, and `grype` was the suggested alternative, so the `grype` approach would be, on mac:
+```
+brew tap anchore/grype
+brew install grype
+grype lite-d:latest
+```
+
 ## ex2
-At this point I found `anchore inline scan` was being deprecated in a Jan 2022, and `grype` was the suggested alternative, so switched to it for the CI.
+I picked Gitlab first until they blocked my account -.-
+I switched to Travis and found a good example for an inline scan on the official docs:
+https://docs.anchore.com/current/docs/using/integration/ci_cd/inline_scanning/
 
 
 ## ex3
