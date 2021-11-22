@@ -37,11 +37,21 @@ I quickly used grep, sed, cut for that.
 ## ex6
 Did the same, this time with python. Nothing fancy, using requests and BeautifulSoup from official docs.
 
+---
+
 ## Issues:
 * Gitlab blocked my account for no reason while just pushing code, which made me waste time switching CI solution -.-
 (I left the .gitlab-ci.yml to show what I was doing. On the includes part, the only one needed was Security/Container-Scanning.gitlab-ci.yml, the rest were what I was testing just for fun as I had just found the templates, and sparked my interest)
 It was my chance to finally test Travis CI, compared with Jenkins I like how clean Travis syntax looks (and not a fan of json) :P
 
-* The litecoin-core image from upbound does not have an arm build, not good for testing on my M1 mac -.-
+* The litecoin-core image from upbound does not have an arm build, not good for testing on my M1 mac -.-  
+Couple that with no builds in 8 months, no wonder litecoin is not so hot nowadays.
 
-* 
+* Two of the pgp keyservers stopped being resolvable for me so I had to remove them (from the original Dockerfile):
+    # gpg --no-tty --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" || \
+    # gpg --no-tty --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ; \
+
+* I separated the key fetch commands onto it's own layer as the updates take a while to test, and key servers timeouts meant doing that all over (image is bigger but saves time)
+
+* I don't think the litecoin-core image can pass the anchore scans as even updating packages, it has libc6 ones with critical vulnerabilities,
+so I think the compromise instead of re-building from the Dockerfile would have been to mention that and configure anchore to ignore those.
