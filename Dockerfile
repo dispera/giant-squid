@@ -1,6 +1,8 @@
 # FROM debian:stable-slim
-# FROM ubuntu:20.04
-FROM debian:stable
+# this is the amd64 image: FROM ubuntu:20.04@sha256:644e9b64bee38964c4d39b8f9f241b894c00d71a932b5a20e1e8ee8e06ca0fbd
+# I used the arm one as I am on an M1 mac:
+FROM ubuntu:20.04@sha256:26c3bd3ae441c873a210200bcbb975ffd2bbf0c0841a4584f4476c8a5b8f3d99
+# FROM debian:stable
 
 RUN useradd -r litecoin \
   && apt-get update -y \
@@ -40,6 +42,9 @@ VOLUME ["/home/litecoin/.litecoin"]
 
 EXPOSE 9332 9333 19332 19333 19444
 
-ENTRYPOINT ["litecoind"]
+# The source image has an entrypoint script which drops root user to litecoin,
+# when the command passed is 'litecoind', as checked on the Dockerfile step: 
 
-CMD ["-printtoconsole"]
+ENTRYPOINT ["entrypoint.sh"]
+
+CMD ["litecoind -printtoconsole"]
