@@ -1,0 +1,1180 @@
+travis_fold:start:worker_info
+[0K[33;1mWorker information[0m
+hostname: 9150711d-012e-455c-befc-2355ce31cb68@1.worker-com-54588667bc-nsvxb.gce-production-1
+version: 6.2.22 https://github.com/travis-ci/worker/tree/858cb91994a513269f2fe9782c15fc113e966231
+instance: travis-job-20f36847-7786-4718-b606-be8c266a0e9d travis-ci-ubuntu-1804-1637074128-27de12ec (via amqp)
+startup: 6.410331567s
+travis_fold:end:worker_info
+[0Ktravis_time:start:1db1afd2
+[0Ktravis_time:end:1db1afd2:start=1637618221050471204,finish=1637618221408467559,duration=357996355,event=no_world_writable_dirs
+[0Ktravis_time:start:0f4cf3d8
+[0Ktravis_time:end:0f4cf3d8:start=1637618221415458269,finish=1637618221419839706,duration=4381437,event=setup_filter
+[0Ktravis_time:start:048e94e4
+[0Ktravis_time:end:048e94e4:start=1637618221435599859,finish=1637618221445520568,duration=9920709,event=agent
+[0Ktravis_time:start:138dff73
+[0Ktravis_time:end:138dff73:start=1637618221449540273,finish=1637618221451781733,duration=2241460,event=check_unsupported
+[0Ktravis_time:start:082e8896
+[0Ktravis_fold:start:system_info
+[0K[33;1mBuild system information[0m
+Build language: ruby
+Build dist: bionic
+Build id: 242225347
+Job id: 549210061
+Runtime kernel version: 5.4.0-1057-gcp
+travis-build version: 944a334e
+[34m[1mBuild image provisioning date and time[0m
+Tue Nov 16 15:30:16 UTC 2021
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.6 LTS
+Release:	18.04
+Codename:	bionic
+[34m[1mSystemd Version[0m
+systemd 237
+[34m[1mCookbooks Version[0m
+f668b6f https://github.com/travis-ci/travis-cookbooks/tree/f668b6f
+[34m[1mgit version[0m
+git version 2.33.1
+[34m[1mbash version[0m
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+[34m[1mdocker version[0m
+Client: Docker Engine - Community
+ Version:           20.10.10
+ API version:       1.41
+ Go version:        go1.16.9
+ Git commit:        b485636
+ Built:             Mon Oct 25 07:42:57 2021
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.9
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.16.8
+  Git commit:       79ea9d3
+  Built:            Mon Oct  4 16:06:34 2021
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.4.11
+  GitCommit:        5b46e404f6b9f661a205e28d59c982d3634148f8
+ runc:
+  Version:          1.0.2
+  GitCommit:        v1.0.2-0-g52b36a2
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.6
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.2
+[34m[1mshfmt version[0m
+v3.2.1
+[34m[1mccache version[0m
+3.4.1
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.59.1 linux-x64 node-v12.21.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 5.2
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.36, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.1.1  11 Sep 2018
+[34m[1mpacker version[0m
+1.7.5
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 11.14 (Ubuntu 11.14-1.pgdg18.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.10 March 2017
+[34m[1msudo version[0m
+1.8.21p2
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Nov 09 2021 14:34:45)
+[34m[1miptables version[0m
+iptables v1.6.1
+[34m[1mcurl version[0m
+curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.1 zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.19.4 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.2  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.39.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+[34m[1mphpenv version[0m
+rbenv 1.2.0-1-g6cc7bff
+[34m[1mrvm version[0m
+rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.27
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.3.25
+9.4.26
+9.5.25
+9.6.24
+[34m[1mRedis version[0m
+redis-server 6.0.6
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mant version[0m
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+[34m[1mmvn version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+[34m[1mgradle version[0m
+Gradle 5.1.1!
+[34m[1mlein version[0m
+Leiningen 2.9.8 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.16.0
+v10.24.1
+v11.15.0
+v12.13.1
+v12.22.7
+v13.3.0
+v14.18.1
+v16.13.0
+v4.9.1
+v6.17.1
+v8.16.2
+v8.17.0
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  7.1
+  7.1.33
+  7.2
+* 7.2.27 (set by /home/travis/.phpenv/version)
+  7.3
+  7.3.14
+  7.4
+  7.4.2
+  hhvm-stable
+  hhvm
+[34m[1mcomposer --version[0m
+Composer version 1.9.2 2020-01-14 16:30:31
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.4.9
+ruby-2.5.3
+ruby-2.5.7
+ruby-2.6.5
+ruby-2.7.0
+travis_fold:end:system_info
+[0K
+travis_time:end:082e8896:start=1637618221454389393,finish=1637618221463782330,duration=9392937,event=show_system_info
+[0Ktravis_time:start:2cfcfb72
+[0Ktravis_time:end:2cfcfb72:start=1637618221467448283,finish=1637618221493304566,duration=25856283,event=rm_riak_source
+[0Ktravis_time:start:002ad2ef
+[0Ktravis_time:end:002ad2ef:start=1637618221498005087,finish=1637618221503787323,duration=5782236,event=fix_rwky_redis
+[0Ktravis_time:start:01b8e605
+[0Ktravis_time:end:01b8e605:start=1637618221506777790,finish=1637618222048764895,duration=541987105,event=wait_for_network
+[0Ktravis_time:start:258fd02a
+[0Ktravis_time:end:258fd02a:start=1637618222052384471,finish=1637618222518753985,duration=466369514,event=update_apt_keys
+[0Ktravis_time:start:0ba63a14
+[0Ktravis_time:end:0ba63a14:start=1637618222524255717,finish=1637618222612308219,duration=88052502,event=fix_hhvm_source
+[0Ktravis_time:start:0f41551a
+[0Ktravis_time:end:0f41551a:start=1637618222617371230,finish=1637618222621042221,duration=3670991,event=update_mongo_arch
+[0Ktravis_time:start:1189af09
+[0Ktravis_time:end:1189af09:start=1637618222625625204,finish=1637618222688203530,duration=62578326,event=fix_sudo_enabled_trusty
+[0Ktravis_time:start:0b672bd6
+[0Ktravis_time:end:0b672bd6:start=1637618222693277569,finish=1637618222696490218,duration=3212649,event=update_glibc
+[0Ktravis_time:start:157cd20a
+[0Ktravis_time:end:157cd20a:start=1637618222701094838,finish=1637618222711904752,duration=10809914,event=clean_up_path
+[0Ktravis_time:start:0000a0b3
+[0Ktravis_time:end:0000a0b3:start=1637618222716767139,finish=1637618222728384461,duration=11617322,event=fix_resolv_conf
+[0Ktravis_time:start:1c9c6c70
+[0Ktravis_time:end:1c9c6c70:start=1637618222732913165,finish=1637618222763216810,duration=30303645,event=fix_etc_hosts
+[0Ktravis_time:start:1c3e35d9
+[0Ktravis_time:end:1c3e35d9:start=1637618222767912302,finish=1637618222777948138,duration=10035836,event=fix_mvn_settings_xml
+[0Ktravis_time:start:02018ff7
+[0Ktravis_time:end:02018ff7:start=1637618222785779125,finish=1637618222801023155,duration=15244030,event=no_ipv6_localhost
+[0Ktravis_time:start:0b9ccefa
+[0Ktravis_time:end:0b9ccefa:start=1637618222808677128,finish=1637618222812307709,duration=3630581,event=fix_etc_mavenrc
+[0Ktravis_time:start:01ad4760
+[0Ktravis_time:end:01ad4760:start=1637618222820074719,finish=1637618222824679953,duration=4605234,event=fix_wwdr_certificate
+[0Ktravis_time:start:221b4261
+[0Ktravis_time:end:221b4261:start=1637618222832107639,finish=1637618222880327277,duration=48219638,event=put_localhost_first
+[0Ktravis_time:start:0465a078
+[0Ktravis_time:end:0465a078:start=1637618222888766171,finish=1637618222893330057,duration=4563886,event=home_paths
+[0Ktravis_time:start:1a65b24e
+[0Ktravis_time:end:1a65b24e:start=1637618222900459451,finish=1637618222918196772,duration=17737321,event=disable_initramfs
+[0Ktravis_time:start:14198200
+[0Ktravis_time:end:14198200:start=1637618222925870147,finish=1637618223122828165,duration=196958018,event=disable_ssh_roaming
+[0Ktravis_time:start:058579c5
+[0Ktravis_time:end:058579c5:start=1637618223130871225,finish=1637618223134606913,duration=3735688,event=debug_tools
+[0Ktravis_time:start:0ca862a6
+[0Ktravis_time:end:0ca862a6:start=1637618223142341302,finish=1637618223147089648,duration=4748346,event=uninstall_oclint
+[0Ktravis_time:start:128c5533
+[0Ktravis_time:end:128c5533:start=1637618223154553118,finish=1637618223159702369,duration=5149251,event=rvm_use
+[0Ktravis_time:start:1fef42c8
+[0Ktravis_time:end:1fef42c8:start=1637618223166591607,finish=1637618223178986548,duration=12394941,event=rm_etc_boto_cfg
+[0Ktravis_time:start:24352b1a
+[0Ktravis_time:end:24352b1a:start=1637618223186668078,finish=1637618223191008041,duration=4339963,event=rm_oraclejdk8_symlink
+[0Ktravis_time:start:0ed845fe
+[0Ktravis_time:end:0ed845fe:start=1637618223199070587,finish=1637618223329832263,duration=130761676,event=enable_i386
+[0Ktravis_time:start:05eadfbd
+[0Ktravis_time:end:05eadfbd:start=1637618223337211999,finish=1637618223343047566,duration=5835567,event=update_rubygems
+[0Ktravis_time:start:07ec7440
+[0Ktravis_time:end:07ec7440:start=1637618223350530763,finish=1637618224850655390,duration=1500124627,event=ensure_path_components
+[0Ktravis_time:start:1e9fb50e
+[0Ktravis_time:end:1e9fb50e:start=1637618224854498209,finish=1637618224857487888,duration=2989679,event=redefine_curl
+[0Ktravis_time:start:012ef4db
+[0Ktravis_time:end:012ef4db:start=1637618224861071754,finish=1637618224980566192,duration=119494438,event=nonblock_pipe
+[0Ktravis_time:start:02c73976
+[0Ktravis_time:end:02c73976:start=1637618224984552131,finish=1637618231034062417,duration=6049510286,event=apt_get_update
+[0Ktravis_time:start:11361ab8
+[0Ktravis_time:end:11361ab8:start=1637618231038159848,finish=1637618231040518025,duration=2358177,event=deprecate_xcode_64
+[0Ktravis_time:start:0261b4f6
+[0Ktravis_time:end:0261b4f6:start=1637618231044896119,finish=1637618234039534716,duration=2994638597,event=update_heroku
+[0Ktravis_time:start:009da609
+[0Ktravis_time:end:009da609:start=1637618234044330936,finish=1637618234046357102,duration=2026166,event=shell_session_update
+[0Ktravis_time:start:0055f840
+[0Ktravis_fold:start:docker_mtu_and_registry_mirrors
+[0Ktravis_fold:end:docker_mtu_and_registry_mirrors
+[0Ktravis_time:end:0055f840:start=1637618234049831610,finish=1637618235907629210,duration=1857797600,event=set_docker_mtu_and_registry_mirrors
+[0Ktravis_time:start:058133e0
+[0Ktravis_fold:start:resolvconf
+[0Ktravis_fold:end:resolvconf
+[0Ktravis_time:end:058133e0:start=1637618235912010309,finish=1637618236007038691,duration=95028382,event=resolvconf
+[0Ktravis_time:start:03ad5dea
+[0Ktravis_time:end:03ad5dea:start=1637618236010933703,finish=1637618236214510155,duration=203576452,event=maven_central_mirror
+[0Ktravis_time:start:007401f6
+[0Ktravis_time:end:007401f6:start=1637618236218420449,finish=1637618236360676219,duration=142255770,event=maven_https
+[0Ktravis_time:start:012a6410
+[0Ktravis_fold:start:services
+[0Ktravis_time:start:39d1e524
+[0K$ sudo systemctl start docker
+travis_time:end:39d1e524:start=1637618236371032344,finish=1637618236389689056,duration=18656712,event=prepare
+[0Ktravis_fold:end:services
+[0Ktravis_time:end:39d1e524:start=1637618236371032344,finish=1637618239397619860,duration=3026587516,event=services
+[0Ktravis_time:start:004d0046
+[0Ktravis_time:end:004d0046:start=1637618239400918078,finish=1637618239403486123,duration=2568045,event=fix_ps4
+[0Ktravis_time:start:080c5530
+[0Ktravis_fold:start:ssh_key
+[0KInstalling SSH key from: default repository key
+Key fingerprint: 53:ca:c4:1f:87:6c:1b:3b:19:12:b0:ff:57:84:66:9e
+travis_fold:end:ssh_key
+[0KUsing /home/travis/.netrc to clone repository.
+
+travis_fold:start:git.checkout
+[0Ktravis_time:start:01ca9e4c
+[0K$ git clone --depth=50 --branch=main https://github.com/dispera/giant-squid.git dispera/giant-squid
+Cloning into 'dispera/giant-squid'...
+travis_time:end:01ca9e4c:start=1637618239428770285,finish=1637618240138369631,duration=709599346,event=checkout
+[0K$ cd dispera/giant-squid
+$ git checkout -qf a199824327beb8b25fbaad3b0137de3b5fed0f8d
+travis_fold:end:git.checkout
+[0K
+travis_time:end:01ca9e4c:start=1637618239428770285,finish=1637618240148922557,duration=720152272,event=checkout
+[0Ktravis_time:start:02da9da3
+[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_USER=[secure]
+$ export DOCKER_PASS=[secure]
+
+[33;1mSetting environment variables from .travis.yml[0m
+$ export IMAGE_NAME="[secure]/litecoin-squid"
+$ export IMAGE_TAG="latest"
+
+travis_time:end:02da9da3:start=1637618240152888892,finish=1637618240160353069,duration=7464177,event=env
+[0Ktravis_fold:start:rvm
+[0Ktravis_time:start:1483981c
+[0K$ rvm use default
+Using /home/travis/.rvm/gems/ruby-2.6.5
+travis_time:end:1483981c:start=1637618240167473917,finish=1637618240891188337,duration=723714420,event=setup
+[0Ktravis_fold:end:rvm
+[0K
+travis_fold:start:ruby.versions
+[0K$ ruby --version
+ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+$ rvm --version
+rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+$ bundle --version
+Bundler version 2.2.31
+$ gem --version
+3.0.6
+travis_fold:end:ruby.versions
+[0K
+No Gemfile found, skipping bundle install
+
+travis_time:start:35366541
+[0K$ docker build -t "${IMAGE_NAME}:ci" .
+Sending build context to Docker daemon  117.8kB
+
+
+Step 1/12 : FROM ubuntu:20.04@sha256:7cc0576c7c0ec2384de5cbf245f41567e922aab1b075f3e8ad565f508032df17
+docker.io/library/ubuntu:20.04@sha256:7cc0576c7c0ec2384de5cbf245f41567e922aab1b075f3e8ad565f508032df17: Pulling from library/ubuntu
+7b1a6ab2e44d: Pulling fs layer
+7b1a6ab2e44d: Verifying Checksum
+7b1a6ab2e44d: Download complete
+7b1a6ab2e44d: Pull complete
+Digest: sha256:7cc0576c7c0ec2384de5cbf245f41567e922aab1b075f3e8ad565f508032df17
+Status: Downloaded newer image for ubuntu:20.04@sha256:7cc0576c7c0ec2384de5cbf245f41567e922aab1b075f3e8ad565f508032df17
+ ---> ba6acccedd29
+Step 2/12 : RUN useradd -r litecoin   && apt-get update -y   && apt-get install -y curl gnupg   && apt-get clean   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+ ---> Running in 268b552235b2
+Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1278 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
+Get:8 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [822 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [682 kB]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [30.1 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [33.3 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1690 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1097 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [738 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [7185 B]
+Get:18 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [2668 B]
+Fetched 19.8 MB in 3s (7528 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  ca-certificates dirmngr gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client
+  gpg-wks-server gpgconf gpgsm krb5-locales libasn1-8-heimdal libassuan0
+  libbrotli1 libcurl4 libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal
+  libheimbase1-heimdal libheimntlm0-heimdal libhx509-5-heimdal libk5crypto3
+  libkeyutils1 libkrb5-26-heimdal libkrb5-3 libkrb5support0 libksba8
+  libldap-2.4-2 libldap-common libnghttp2-14 libnpth0 libpsl5 libreadline8
+  libroken18-heimdal librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db
+  libsqlite3-0 libssh-4 libssl1.1 libwind0-heimdal openssl pinentry-curses
+  publicsuffix readline-common
+Suggested packages:
+  dbus-user-session libpam-systemd pinentry-gnome3 tor parcimonie xloadimage
+  scdaemon krb5-doc krb5-user libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql pinentry-doc readline-doc
+The following NEW packages will be installed:
+  ca-certificates curl dirmngr gnupg gnupg-l10n gnupg-utils gpg gpg-agent
+  gpg-wks-client gpg-wks-server gpgconf gpgsm krb5-locales libasn1-8-heimdal
+  libassuan0 libbrotli1 libcurl4 libgssapi-krb5-2 libgssapi3-heimdal
+  libhcrypto4-heimdal libheimbase1-heimdal libheimntlm0-heimdal
+  libhx509-5-heimdal libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3
+  libkrb5support0 libksba8 libldap-2.4-2 libldap-common libnghttp2-14 libnpth0
+  libpsl5 libreadline8 libroken18-heimdal librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libsqlite3-0 libssh-4 libssl1.1 libwind0-heimdal openssl
+  pinentry-curses publicsuffix readline-common
+0 upgraded, 48 newly installed, 0 to remove and 0 not upgraded.
+Need to get 8168 kB of archives.
+After this operation, 24.7 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssl1.1 amd64 1.1.1f-1ubuntu2.9 [1321 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssl amd64 1.1.1f-1ubuntu2.9 [622 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ca-certificates all 20210119~20.04.2 [145 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 readline-common all 8.0-4 [53.5 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 libreadline8 amd64 8.0-4 [131 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsqlite3-0 amd64 3.31.1-4ubuntu0.2 [549 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 krb5-locales all 1.17-6ubuntu4.1 [11.4 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkrb5support0 amd64 1.17-6ubuntu4.1 [30.9 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libk5crypto3 amd64 1.17-6ubuntu4.1 [79.9 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 libkeyutils1 amd64 1.6-6ubuntu1 [10.2 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkrb5-3 amd64 1.17-6ubuntu4.1 [330 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgssapi-krb5-2 amd64 1.17-6ubuntu4.1 [121 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libpsl5 amd64 0.21.0-1ubuntu1 [51.5 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 publicsuffix all 20200303.0012-1 [111 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libbrotli1 amd64 1.0.7-6ubuntu0.1 [267 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 libroken18-heimdal amd64 7.7.0+dfsg-1ubuntu1 [41.8 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 libasn1-8-heimdal amd64 7.7.0+dfsg-1ubuntu1 [181 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libheimbase1-heimdal amd64 7.7.0+dfsg-1ubuntu1 [29.7 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libhcrypto4-heimdal amd64 7.7.0+dfsg-1ubuntu1 [87.9 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 libwind0-heimdal amd64 7.7.0+dfsg-1ubuntu1 [48.0 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 libhx509-5-heimdal amd64 7.7.0+dfsg-1ubuntu1 [107 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 libkrb5-26-heimdal amd64 7.7.0+dfsg-1ubuntu1 [208 kB]
+Get:23 http://archive.ubuntu.com/ubuntu focal/main amd64 libheimntlm0-heimdal amd64 7.7.0+dfsg-1ubuntu1 [15.1 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal/main amd64 libgssapi3-heimdal amd64 7.7.0+dfsg-1ubuntu1 [96.1 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg-2 [14.9 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 libsasl2-2 amd64 2.1.27+dfsg-2 [49.3 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libldap-common all 2.4.49+dfsg-2ubuntu1.8 [16.6 kB]
+Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libldap-2.4-2 amd64 2.4.49+dfsg-2ubuntu1.8 [155 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal/main amd64 libnghttp2-14 amd64 1.40.0-1build1 [78.7 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build1 [54.9 kB]
+Get:31 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssh-4 amd64 0.9.3-2ubuntu2.2 [170 kB]
+Get:32 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcurl4 amd64 7.68.0-1ubuntu2.7 [234 kB]
+Get:33 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 curl amd64 7.68.0-1ubuntu2.7 [161 kB]
+Get:34 http://archive.ubuntu.com/ubuntu focal/main amd64 libassuan0 amd64 2.5.3-7ubuntu2 [35.7 kB]
+Get:35 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpgconf amd64 2.2.19-3ubuntu2.1 [124 kB]
+Get:36 http://archive.ubuntu.com/ubuntu focal/main amd64 libksba8 amd64 1.3.5-2 [92.6 kB]
+Get:37 http://archive.ubuntu.com/ubuntu focal/main amd64 libnpth0 amd64 1.6-1 [7736 B]
+Get:38 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 dirmngr amd64 2.2.19-3ubuntu2.1 [329 kB]
+Get:39 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gnupg-l10n all 2.2.19-3ubuntu2.1 [51.7 kB]
+Get:40 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gnupg-utils amd64 2.2.19-3ubuntu2.1 [480 kB]
+Get:41 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpg amd64 2.2.19-3ubuntu2.1 [483 kB]
+Get:42 http://archive.ubuntu.com/ubuntu focal/main amd64 pinentry-curses amd64 1.1.0-3build1 [36.3 kB]
+Get:43 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpg-agent amd64 2.2.19-3ubuntu2.1 [232 kB]
+Get:44 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpg-wks-client amd64 2.2.19-3ubuntu2.1 [97.6 kB]
+Get:45 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpg-wks-server amd64 2.2.19-3ubuntu2.1 [90.3 kB]
+Get:46 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpgsm amd64 2.2.19-3ubuntu2.1 [217 kB]
+Get:47 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gnupg all 2.2.19-3ubuntu2.1 [259 kB]
+Get:48 http://archive.ubuntu.com/ubuntu focal/main amd64 libsasl2-modules amd64 2.1.27+dfsg-2 [49.1 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 8168 kB in 2s (3858 kB/s)
+Selecting previously unselected package libssl1.1:amd64.
+
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 4127 files and directories currently installed.)
+
+Preparing to unpack .../00-libssl1.1_1.1.1f-1ubuntu2.9_amd64.deb ...
+
+Unpacking libssl1.1:amd64 (1.1.1f-1ubuntu2.9) ...
+
+Selecting previously unselected package openssl.
+
+Preparing to unpack .../01-openssl_1.1.1f-1ubuntu2.9_amd64.deb ...
+
+Unpacking openssl (1.1.1f-1ubuntu2.9) ...
+
+Selecting previously unselected package ca-certificates.
+
+Preparing to unpack .../02-ca-certificates_20210119~20.04.2_all.deb ...
+
+Unpacking ca-certificates (20210119~20.04.2) ...
+
+Selecting previously unselected package readline-common.
+
+Preparing to unpack .../03-readline-common_8.0-4_all.deb ...
+
+Unpacking readline-common (8.0-4) ...
+
+Selecting previously unselected package libreadline8:amd64.
+
+Preparing to unpack .../04-libreadline8_8.0-4_amd64.deb ...
+
+Unpacking libreadline8:amd64 (8.0-4) ...
+
+Selecting previously unselected package libsqlite3-0:amd64.
+
+Preparing to unpack .../05-libsqlite3-0_3.31.1-4ubuntu0.2_amd64.deb ...
+
+Unpacking libsqlite3-0:amd64 (3.31.1-4ubuntu0.2) ...
+
+Selecting previously unselected package krb5-locales.
+
+Preparing to unpack .../06-krb5-locales_1.17-6ubuntu4.1_all.deb ...
+
+Unpacking krb5-locales (1.17-6ubuntu4.1) ...
+
+Selecting previously unselected package libkrb5support0:amd64.
+
+Preparing to unpack .../07-libkrb5support0_1.17-6ubuntu4.1_amd64.deb ...
+
+Unpacking libkrb5support0:amd64 (1.17-6ubuntu4.1) ...
+
+Selecting previously unselected package libk5crypto3:amd64.
+
+Preparing to unpack .../08-libk5crypto3_1.17-6ubuntu4.1_amd64.deb ...
+
+Unpacking libk5crypto3:amd64 (1.17-6ubuntu4.1) ...
+
+Selecting previously unselected package libkeyutils1:amd64.
+
+Preparing to unpack .../09-libkeyutils1_1.6-6ubuntu1_amd64.deb ...
+
+Unpacking libkeyutils1:amd64 (1.6-6ubuntu1) ...
+
+Selecting previously unselected package libkrb5-3:amd64.
+
+Preparing to unpack .../10-libkrb5-3_1.17-6ubuntu4.1_amd64.deb ...
+
+Unpacking libkrb5-3:amd64 (1.17-6ubuntu4.1) ...
+
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+
+Preparing to unpack .../11-libgssapi-krb5-2_1.17-6ubuntu4.1_amd64.deb ...
+
+Unpacking libgssapi-krb5-2:amd64 (1.17-6ubuntu4.1) ...
+
+Selecting previously unselected package libpsl5:amd64.
+
+Preparing to unpack .../12-libpsl5_0.21.0-1ubuntu1_amd64.deb ...
+
+Unpacking libpsl5:amd64 (0.21.0-1ubuntu1) ...
+
+Selecting previously unselected package publicsuffix.
+
+Preparing to unpack .../13-publicsuffix_20200303.0012-1_all.deb ...
+
+Unpacking publicsuffix (20200303.0012-1) ...
+
+Selecting previously unselected package libbrotli1:amd64.
+
+Preparing to unpack .../14-libbrotli1_1.0.7-6ubuntu0.1_amd64.deb ...
+
+Unpacking libbrotli1:amd64 (1.0.7-6ubuntu0.1) ...
+
+Selecting previously unselected package libroken18-heimdal:amd64.
+
+Preparing to unpack .../15-libroken18-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+
+Unpacking libroken18-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Selecting previously unselected package libasn1-8-heimdal:amd64.
+
+Preparing to unpack .../16-libasn1-8-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+
+Unpacking libasn1-8-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Selecting previously unselected package libheimbase1-heimdal:amd64.
+
+Preparing to unpack .../17-libheimbase1-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+
+Unpacking libheimbase1-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Selecting previously unselected package libhcrypto4-heimdal:amd64.
+
+Preparing to unpack .../18-libhcrypto4-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+
+Unpacking libhcrypto4-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Selecting previously unselected package libwind0-heimdal:amd64.
+
+Preparing to unpack .../19-libwind0-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+
+Unpacking libwind0-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Selecting previously unselected package libhx509-5-heimdal:amd64.
+
+Preparing to unpack .../20-libhx509-5-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+
+Unpacking libhx509-5-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Selecting previously unselected package libkrb5-26-heimdal:amd64.
+
+Preparing to unpack .../21-libkrb5-26-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+
+Unpacking libkrb5-26-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Selecting previously unselected package libheimntlm0-heimdal:amd64.
+
+Preparing to unpack .../22-libheimntlm0-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+
+Unpacking libheimntlm0-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Selecting previously unselected package libgssapi3-heimdal:amd64.
+
+Preparing to unpack .../23-libgssapi3-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+
+Unpacking libgssapi3-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Selecting previously unselected package libsasl2-modules-db:amd64.
+
+Preparing to unpack .../24-libsasl2-modules-db_2.1.27+dfsg-2_amd64.deb ...
+
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg-2) ...
+
+Selecting previously unselected package libsasl2-2:amd64.
+
+Preparing to unpack .../25-libsasl2-2_2.1.27+dfsg-2_amd64.deb ...
+
+Unpacking libsasl2-2:amd64 (2.1.27+dfsg-2) ...
+
+Selecting previously unselected package libldap-common.
+
+Preparing to unpack .../26-libldap-common_2.4.49+dfsg-2ubuntu1.8_all.deb ...
+
+Unpacking libldap-common (2.4.49+dfsg-2ubuntu1.8) ...
+
+Selecting previously unselected package libldap-2.4-2:amd64.
+
+Preparing to unpack .../27-libldap-2.4-2_2.4.49+dfsg-2ubuntu1.8_amd64.deb ...
+
+Unpacking libldap-2.4-2:amd64 (2.4.49+dfsg-2ubuntu1.8) ...
+
+Selecting previously unselected package libnghttp2-14:amd64.
+
+Preparing to unpack .../28-libnghttp2-14_1.40.0-1build1_amd64.deb ...
+
+Unpacking libnghttp2-14:amd64 (1.40.0-1build1) ...
+
+Selecting previously unselected package librtmp1:amd64.
+
+Preparing to unpack .../29-librtmp1_2.4+20151223.gitfa8646d.1-2build1_amd64.deb ...
+
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build1) ...
+
+Selecting previously unselected package libssh-4:amd64.
+
+Preparing to unpack .../30-libssh-4_0.9.3-2ubuntu2.2_amd64.deb ...
+
+Unpacking libssh-4:amd64 (0.9.3-2ubuntu2.2) ...
+
+Selecting previously unselected package libcurl4:amd64.
+
+Preparing to unpack .../31-libcurl4_7.68.0-1ubuntu2.7_amd64.deb ...
+
+Unpacking libcurl4:amd64 (7.68.0-1ubuntu2.7) ...
+
+Selecting previously unselected package curl.
+
+Preparing to unpack .../32-curl_7.68.0-1ubuntu2.7_amd64.deb ...
+
+Unpacking curl (7.68.0-1ubuntu2.7) ...
+
+Selecting previously unselected package libassuan0:amd64.
+
+Preparing to unpack .../33-libassuan0_2.5.3-7ubuntu2_amd64.deb ...
+
+Unpacking libassuan0:amd64 (2.5.3-7ubuntu2) ...
+
+Selecting previously unselected package gpgconf.
+
+Preparing to unpack .../34-gpgconf_2.2.19-3ubuntu2.1_amd64.deb ...
+
+Unpacking gpgconf (2.2.19-3ubuntu2.1) ...
+
+Selecting previously unselected package libksba8:amd64.
+
+Preparing to unpack .../35-libksba8_1.3.5-2_amd64.deb ...
+
+Unpacking libksba8:amd64 (1.3.5-2) ...
+
+Selecting previously unselected package libnpth0:amd64.
+
+Preparing to unpack .../36-libnpth0_1.6-1_amd64.deb ...
+
+Unpacking libnpth0:amd64 (1.6-1) ...
+
+Selecting previously unselected package dirmngr.
+
+Preparing to unpack .../37-dirmngr_2.2.19-3ubuntu2.1_amd64.deb ...
+
+Unpacking dirmngr (2.2.19-3ubuntu2.1) ...
+
+Selecting previously unselected package gnupg-l10n.
+
+Preparing to unpack .../38-gnupg-l10n_2.2.19-3ubuntu2.1_all.deb ...
+
+Unpacking gnupg-l10n (2.2.19-3ubuntu2.1) ...
+
+Selecting previously unselected package gnupg-utils.
+
+Preparing to unpack .../39-gnupg-utils_2.2.19-3ubuntu2.1_amd64.deb ...
+
+Unpacking gnupg-utils (2.2.19-3ubuntu2.1) ...
+
+Selecting previously unselected package gpg.
+
+Preparing to unpack .../40-gpg_2.2.19-3ubuntu2.1_amd64.deb ...
+
+Unpacking gpg (2.2.19-3ubuntu2.1) ...
+
+Selecting previously unselected package pinentry-curses.
+
+Preparing to unpack .../41-pinentry-curses_1.1.0-3build1_amd64.deb ...
+
+Unpacking pinentry-curses (1.1.0-3build1) ...
+
+Selecting previously unselected package gpg-agent.
+
+Preparing to unpack .../42-gpg-agent_2.2.19-3ubuntu2.1_amd64.deb ...
+
+Unpacking gpg-agent (2.2.19-3ubuntu2.1) ...
+
+Selecting previously unselected package gpg-wks-client.
+
+Preparing to unpack .../43-gpg-wks-client_2.2.19-3ubuntu2.1_amd64.deb ...
+
+Unpacking gpg-wks-client (2.2.19-3ubuntu2.1) ...
+
+Selecting previously unselected package gpg-wks-server.
+
+Preparing to unpack .../44-gpg-wks-server_2.2.19-3ubuntu2.1_amd64.deb ...
+
+Unpacking gpg-wks-server (2.2.19-3ubuntu2.1) ...
+
+Selecting previously unselected package gpgsm.
+
+Preparing to unpack .../45-gpgsm_2.2.19-3ubuntu2.1_amd64.deb ...
+
+Unpacking gpgsm (2.2.19-3ubuntu2.1) ...
+
+Selecting previously unselected package gnupg.
+
+Preparing to unpack .../46-gnupg_2.2.19-3ubuntu2.1_all.deb ...
+
+Unpacking gnupg (2.2.19-3ubuntu2.1) ...
+
+Selecting previously unselected package libsasl2-modules:amd64.
+
+Preparing to unpack .../47-libsasl2-modules_2.1.27+dfsg-2_amd64.deb ...
+
+Unpacking libsasl2-modules:amd64 (2.1.27+dfsg-2) ...
+
+Setting up libksba8:amd64 (1.3.5-2) ...
+
+Setting up libkeyutils1:amd64 (1.6-6ubuntu1) ...
+
+Setting up libpsl5:amd64 (0.21.0-1ubuntu1) ...
+
+Setting up libssl1.1:amd64 (1.1.1f-1ubuntu2.9) ...
+
+debconf: unable to initialize frontend: Dialog
+
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+
+debconf: falling back to frontend: Readline
+
+debconf: unable to initialize frontend: Readline
+
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+
+debconf: falling back to frontend: Teletype
+
+Setting up libbrotli1:amd64 (1.0.7-6ubuntu0.1) ...
+
+Setting up libsqlite3-0:amd64 (3.31.1-4ubuntu0.2) ...
+
+Setting up libsasl2-modules:amd64 (2.1.27+dfsg-2) ...
+
+Setting up libnghttp2-14:amd64 (1.40.0-1build1) ...
+
+Setting up libnpth0:amd64 (1.6-1) ...
+
+Setting up krb5-locales (1.17-6ubuntu4.1) ...
+
+Setting up libassuan0:amd64 (2.5.3-7ubuntu2) ...
+
+Setting up libldap-common (2.4.49+dfsg-2ubuntu1.8) ...
+
+Setting up libkrb5support0:amd64 (1.17-6ubuntu4.1) ...
+
+Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg-2) ...
+
+Setting up gnupg-l10n (2.2.19-3ubuntu2.1) ...
+
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build1) ...
+
+Setting up libk5crypto3:amd64 (1.17-6ubuntu4.1) ...
+
+Setting up libsasl2-2:amd64 (2.1.27+dfsg-2) ...
+
+Setting up libroken18-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Setting up libkrb5-3:amd64 (1.17-6ubuntu4.1) ...
+
+Setting up openssl (1.1.1f-1ubuntu2.9) ...
+
+Setting up readline-common (8.0-4) ...
+
+Setting up publicsuffix (20200303.0012-1) ...
+
+Setting up libheimbase1-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Setting up pinentry-curses (1.1.0-3build1) ...
+
+Setting up libasn1-8-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Setting up libreadline8:amd64 (8.0-4) ...
+
+Setting up libhcrypto4-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Setting up ca-certificates (20210119~20.04.2) ...
+
+debconf: unable to initialize frontend: Dialog
+
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+
+debconf: falling back to frontend: Readline
+
+debconf: unable to initialize frontend: Readline
+
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+
+debconf: falling back to frontend: Teletype
+
+Updating certificates in /etc/ssl/certs...
+
+128 added, 0 removed; done.
+
+Setting up libwind0-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Setting up libgssapi-krb5-2:amd64 (1.17-6ubuntu4.1) ...
+
+Setting up libssh-4:amd64 (0.9.3-2ubuntu2.2) ...
+
+Setting up gpgconf (2.2.19-3ubuntu2.1) ...
+
+Setting up gpg (2.2.19-3ubuntu2.1) ...
+
+Setting up gnupg-utils (2.2.19-3ubuntu2.1) ...
+
+Setting up gpg-agent (2.2.19-3ubuntu2.1) ...
+
+Setting up libhx509-5-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Setting up gpgsm (2.2.19-3ubuntu2.1) ...
+
+Setting up gpg-wks-server (2.2.19-3ubuntu2.1) ...
+
+Setting up libkrb5-26-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Setting up libheimntlm0-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Setting up libgssapi3-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+
+Setting up libldap-2.4-2:amd64 (2.4.49+dfsg-2ubuntu1.8) ...
+
+Setting up dirmngr (2.2.19-3ubuntu2.1) ...
+
+Setting up libcurl4:amd64 (7.68.0-1ubuntu2.7) ...
+
+Setting up curl (7.68.0-1ubuntu2.7) ...
+
+Setting up gpg-wks-client (2.2.19-3ubuntu2.1) ...
+
+Setting up gnupg (2.2.19-3ubuntu2.1) ...
+
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+
+Processing triggers for ca-certificates (20210119~20.04.2) ...
+
+Updating certificates in /etc/ssl/certs...
+
+0 added, 0 removed; done.
+
+Running hooks in /etc/ca-certificates/update.d...
+
+done.
+
+Removing intermediate container 268b552235b2
+ ---> 00d2878eeaed
+Step 3/12 : RUN set -ex &&     for key in     B42F6819007F00F88E364FD4036A9C25BF357DD4     FE3348877809386C   ; do     gpg --no-tty --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --no-tty --keyserver keyserver.ubuntu.com --recv-keys "$key" ||     gpg --no-tty --keyserver keyring.debian.org  --recv-keys "$key" ||     gpg --no-tty --keyserver hkp://pgp.mit.edu:11371 --recv-keys "$key" ||     gpg --no-tty --keyserver keyserver.pgp.com --recv-keys "$key" ||     gpg --no-tty --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --no-tty --keyserver attester.flowcrypt.com --recv-keys "$key" ||     gpg --no-tty --keyserver zimmermann.mayfirst.org --recv-keys "$key" ||     gpg --no-tty --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ;   done
+ ---> Running in 66fc300218ad
+[91m+ gpg --no-tty --keyserver pgp.mit.edu --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
+[0m[91mgpg: directory '/root/.gnupg' created
+gpg: keybox '/root/.gnupg/pubring.kbx' created
+[0m[91mgpg: /root/.gnupg/trustdb.gpg: trustdb created
+gpg: key 036A9C25BF357DD4: public key "Tianon Gravi <tianon@tianon.xyz>" imported
+[0m[91mgpg: Total number processed: 1
+gpg:               imported: 1
++ gpg --no-tty --keyserver pgp.mit.edu --recv-keys FE3348877809386C
+[0m[91mgpg: key FE3348877809386C: public key "Adrian Gallagher <thrasher@addictionsoftware.com>" imported
+[0m[91mgpg: Total number processed: 1
+gpg:               imported: 1
+[0mRemoving intermediate container 66fc300218ad
+ ---> 25b5151c19e8
+Step 4/12 : ENV GOSU_VERSION=1.12
+ ---> Running in 51d939ffc2ec
+Removing intermediate container 51d939ffc2ec
+ ---> 803c5849b34d
+Step 5/12 : RUN curl -o /usr/local/bin/gosu -fSL https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-$(dpkg --print-architecture)   && curl -o /usr/local/bin/gosu.asc -fSL https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-$(dpkg --print-architecture).asc   && gpg --verify /usr/local/bin/gosu.asc   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
+ ---> Running in e89d036ca79d
+[91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m
+100   647  100   647    0     0   3921      0 --:--:-- --:--:-- --:--:--  3921
+[0m[91m
+100 2348k  100 2348k    0     0  5699k      0 --:--:-- --:--:-- --:--:-- 5699k
+[0m[91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   620  100   620    0     0   4000      0 --:--:-- --:--:-- --:--:--  3974
+[0m[91m
+100   566  100   566    0     0   2202      0 --:--:-- --:--:-- --:--:--  2202
+[0m[91mgpg: assuming signed data in '/usr/local/bin/gosu'
+[0m[91mgpg: Signature made Thu Apr 16 06:40:32 2020 UTC
+gpg:                using RSA key B42F6819007F00F88E364FD4036A9C25BF357DD4
+[0m[91mgpg: Good signature from "Tianon Gravi <tianon@tianon.xyz>" [unknown]
+gpg:                 aka "Tianon Gravi <tianon@debian.org>" [unknown]
+gpg:                 aka "Tianon Gravi <tianon@dockerproject.org>" [unknown]
+gpg:                 aka "Andrew Page (tianon) <andrew@infosiftr.com>" [unknown]
+gpg:                 aka "Andrew Page (tianon) <andrew@vitalroute.com>" [unknown]
+gpg:                 aka "Andrew Page (Tianon Gravi) <admwiggin@gmail.com>" [unknown]
+gpg:                 aka "Tianon Gravi (Andrew Page) <tianon@infosiftr.com>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: B42F 6819 007F 00F8 8E36  4FD4 036A 9C25 BF35 7DD4
+[0mRemoving intermediate container e89d036ca79d
+ ---> 87a8c8e79300
+Step 6/12 : ENV LITECOIN_VERSION=0.18.1
+ ---> Running in fc141edf0d98
+Removing intermediate container fc141edf0d98
+ ---> 8d67b02b4c5c
+Step 7/12 : ENV LITECOIN_DATA=/home/litecoin/.litecoin
+ ---> Running in b62202ed3ff2
+Removing intermediate container b62202ed3ff2
+ ---> cc90f699d4c0
+Step 8/12 : RUN curl -SLO https://download.litecoin.org/litecoin-${LITECOIN_VERSION}/linux/litecoin-${LITECOIN_VERSION}-x86_64-linux-gnu.tar.gz   && curl -SLO https://download.litecoin.org/litecoin-${LITECOIN_VERSION}/linux/litecoin-${LITECOIN_VERSION}-linux-signatures.asc   && gpg --verify litecoin-${LITECOIN_VERSION}-linux-signatures.asc   && grep $(sha256sum litecoin-${LITECOIN_VERSION}-x86_64-linux-gnu.tar.gz | awk '{ print $1 }') litecoin-${LITECOIN_VERSION}-linux-signatures.asc   && tar --strip=2 -xzf *.tar.gz -C /usr/local/bin   && rm *.tar.gz
+ ---> Running in 206a3bab2fd1
+[91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m
+100 30.4M  100 30.4M    0     0  90.7M      0 --:--:-- --:--:-- --:--:-- 90.7M
+[0m[91m  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m
+100  1073  100  1073    0     0   7832      0 --:--:-- --:--:-- --:--:--  7832
+[0m[91mgpg: Signature made Wed Jun 10 04:57:17 2020 UTC
+gpg:                using RSA key 59CAF0E96F23F53747945FD4FE3348877809386C
+[0m[91mgpg: Good signature from "Adrian Gallagher <thrasher@addictionsoftware.com>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 59CA F0E9 6F23 F537 4794  5FD4 FE33 4887 7809 386C
+[0mca50936299e2c5a66b954c266dcaaeef9e91b2f5307069b9894048acf3eb5751  litecoin-0.18.1-x86_64-linux-gnu.tar.gz
+Removing intermediate container 206a3bab2fd1
+ ---> c6a0a254ae2d
+Step 9/12 : VOLUME ["/home/litecoin/.litecoin"]
+ ---> Running in 90f8d487f9eb
+Removing intermediate container 90f8d487f9eb
+ ---> 038162488fd5
+Step 10/12 : EXPOSE 9332 9333 19332 19333 19444
+ ---> Running in 6df2cb9f5d02
+Removing intermediate container 6df2cb9f5d02
+ ---> 778441d0e55d
+Step 11/12 : ENTRYPOINT ["entrypoint.sh"]
+ ---> Running in 29dc08553fc2
+Removing intermediate container 29dc08553fc2
+ ---> 7588defb7434
+Step 12/12 : CMD ["litecoind", "-printtoconsole"]
+ ---> Running in 1012ae40cb11
+Removing intermediate container 1012ae40cb11
+ ---> 90b2535d66a0
+Successfully built 90b2535d66a0
+Successfully tagged [secure]/litecoin-squid:ci
+travis_time:end:35366541:start=1637618241373847043,finish=1637618265142957792,duration=23769110749,event=script
+[0K[32;1mThe command "docker build -t "${IMAGE_NAME}:ci" ." exited with 0.[0m
+travis_time:start:01682058
+[0K$ curl -s https://ci-tools.anchore.io/inline_scan-latest | bash -s -- "${IMAGE_NAME}:ci"
+
+Pulling docker.io/anchore/inline-scan:v0.10.2
+v0.10.2: Pulling from anchore/inline-scan
+296e14ee2414: Pulling fs layer
+356f18f3a935: Pulling fs layer
+872030f417eb: Pulling fs layer
+b91585f34683: Pulling fs layer
+c53ddb9d433c: Pulling fs layer
+0eab680bd6a6: Pulling fs layer
+9fed99faba8e: Pulling fs layer
+78f465b21e8a: Pulling fs layer
+ca118c5e90e8: Pulling fs layer
+9770ffe8b7c7: Pulling fs layer
+977969ba2e47: Pulling fs layer
+2defca140b85: Pulling fs layer
+e4be9cb7b2e3: Pulling fs layer
+e1cad7755967: Pulling fs layer
+86b2acf39121: Pulling fs layer
+4a360a4def95: Pulling fs layer
+f245458c23d8: Pulling fs layer
+8b4828f693de: Pulling fs layer
+b91585f34683: Waiting
+c53ddb9d433c: Waiting
+0eab680bd6a6: Waiting
+9fed99faba8e: Waiting
+78f465b21e8a: Waiting
+ca118c5e90e8: Waiting
+9770ffe8b7c7: Waiting
+977969ba2e47: Waiting
+2defca140b85: Waiting
+e4be9cb7b2e3: Waiting
+e1cad7755967: Waiting
+86b2acf39121: Waiting
+4a360a4def95: Waiting
+f245458c23d8: Waiting
+8b4828f693de: Waiting
+356f18f3a935: Verifying Checksum
+356f18f3a935: Download complete
+b91585f34683: Verifying Checksum
+b91585f34683: Download complete
+c53ddb9d433c: Verifying Checksum
+c53ddb9d433c: Download complete
+872030f417eb: Verifying Checksum
+872030f417eb: Download complete
+0eab680bd6a6: Download complete
+296e14ee2414: Verifying Checksum
+296e14ee2414: Download complete
+9fed99faba8e: Verifying Checksum
+9fed99faba8e: Download complete
+78f465b21e8a: Verifying Checksum
+78f465b21e8a: Download complete
+ca118c5e90e8: Verifying Checksum
+ca118c5e90e8: Download complete
+2defca140b85: Verifying Checksum
+2defca140b85: Download complete
+977969ba2e47: Verifying Checksum
+977969ba2e47: Download complete
+9770ffe8b7c7: Verifying Checksum
+9770ffe8b7c7: Download complete
+86b2acf39121: Verifying Checksum
+86b2acf39121: Download complete
+4a360a4def95: Verifying Checksum
+4a360a4def95: Download complete
+f245458c23d8: Verifying Checksum
+f245458c23d8: Download complete
+8b4828f693de: Verifying Checksum
+8b4828f693de: Download complete
+e4be9cb7b2e3: Verifying Checksum
+e4be9cb7b2e3: Download complete
+296e14ee2414: Pull complete
+356f18f3a935: Pull complete
+872030f417eb: Pull complete
+b91585f34683: Pull complete
+c53ddb9d433c: Pull complete
+0eab680bd6a6: Pull complete
+e1cad7755967: Verifying Checksum
+e1cad7755967: Download complete
+9fed99faba8e: Pull complete
+78f465b21e8a: Pull complete
+ca118c5e90e8: Pull complete
+9770ffe8b7c7: Pull complete
+977969ba2e47: Pull complete
+2defca140b85: Pull complete
+e4be9cb7b2e3: Pull complete
+e1cad7755967: Pull complete
+86b2acf39121: Pull complete
+4a360a4def95: Pull complete
+f245458c23d8: Pull complete
+8b4828f693de: Pull complete
+Digest: sha256:69add9acebeeacbcf3950a44018d56c98d1a1f2a892c177febfd53c04e71a00d
+Status: Downloaded newer image for anchore/inline-scan:v0.10.2
+docker.io/anchore/inline-scan:v0.10.2
+Starting Anchore Engine
+Starting Postgresql... Postgresql started successfully!
+Starting Docker registry... Docker registry started successfully!
+Waiting for Anchore Engine to be available.
+
+	Status: not_ready...
+
+Anchore Engine is available!
+
+
+Preparing [secure]/litecoin-squid:ci for analysis
+
+Getting image source signatures
+Copying blob sha256:d1956fd6f550e3f58c90d57b0fb909964859a58faf170f547ce9b9eec59a45e8
+Copying blob sha256:654e6d47f60a1656ca626b3894001d28ecda0f5aa33a1199955ceaaf6f40c84f
+Copying blob sha256:9536a289dbd07ddfc8d998c8c3bd78829c5e04d4a3abe852c8eef7d84b4d06fe
+Copying blob sha256:9f54eef412758095c8079ac465d494a2872e02e90bf1fb5f12a1641c0d1bb78b
+Copying blob sha256:4d982a3d1f5e65f3ee30d9bdd9f49ce4dc2e4ba8515d8cc57386e643fa82e429
+Copying config sha256:90b2535d66a02023115a5cc388baa2c415468843a3697bb0f97f2d43e1e14f4f
+Writing manifest to image destination
+Storing signatures
+
+Image archive loaded into Anchore Engine using tag -- litecoin-squid:ci
+Waiting for analysis to complete...
+
+	Status: not_analyzed
+	Status: analyzing..........
+	Status: analyzed
+
+Analysis completed!
+
+
+	Policy Evaluation - litecoin-squid:ci
+-----------------------------------------------------------
+
+Image Digest: sha256:0f5a6155f84339917a59f4b8a161817e2ba21f666098d7778fb5b11f0b26d8cb
+Full Tag: localhost:5000/litecoin-squid:ci
+Image ID: 90b2535d66a02023115a5cc388baa2c415468843a3697bb0f97f2d43e1e14f4f
+Status: pass
+Last Eval: 2021-11-22T22:04:38Z
+Policy ID: 2c53a13c-1765-11e8-82ef-23527761d060
+Final Action: warn
+Final Action Reason: policy_evaluation
+
+Gate                   Trigger            Detail                                                                                                                                                         Status        
+dockerfile             instruction        Dockerfile directive 'HEALTHCHECK' not found, matching condition 'not_exists' check                                                                            warn          
+vulnerabilities        package            MEDIUM Vulnerability found in os package type (dpkg) - libgssapi-krb5-2 (CVE-2021-36222 - http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-36222)        warn          
+vulnerabilities        package            MEDIUM Vulnerability found in os package type (dpkg) - libkrb5-3 (CVE-2021-36222 - http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-36222)               warn          
+vulnerabilities        package            MEDIUM Vulnerability found in os package type (dpkg) - krb5-locales (CVE-2021-36222 - http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-36222)            warn          
+vulnerabilities        package            MEDIUM Vulnerability found in os package type (dpkg) - libc6 (CVE-2021-38604 - http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-38604)                   warn          
+vulnerabilities        package            MEDIUM Vulnerability found in os package type (dpkg) - libsqlite3-0 (CVE-2020-9794 - http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-9794)              warn          
+vulnerabilities        package            MEDIUM Vulnerability found in os package type (dpkg) - libc6 (CVE-2021-35942 - http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-35942)                   warn          
+vulnerabilities        package            MEDIUM Vulnerability found in os package type (dpkg) - libk5crypto3 (CVE-2021-36222 - http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-36222)            warn          
+vulnerabilities        package            MEDIUM Vulnerability found in os package type (dpkg) - libc-bin (CVE-2021-38604 - http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-38604)                warn          
+vulnerabilities        package            MEDIUM Vulnerability found in os package type (dpkg) - libkrb5support0 (CVE-2021-36222 - http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-36222)         warn          
+vulnerabilities        package            MEDIUM Vulnerability found in os package type (dpkg) - libc-bin (CVE-2021-35942 - http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-35942)                warn          
+
+
+Cleaning up docker container: 25789-inline-anchore-engine
+travis_time:end:01682058:start=1637618265151102434,finish=1637618685009860757,duration=419858758323,event=script
+[0K[32;1mThe command "curl -s https://ci-tools.anchore.io/inline_scan-latest | bash -s -- "${IMAGE_NAME}:ci"" exited with 0.[0m
+travis_time:start:01bd1d16
+[0K$ echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+travis_time:end:01bd1d16:start=1637618685018451525,finish=1637618685494051119,duration=475599594,event=script
+[0K[32;1mThe command "echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin" exited with 0.[0m
+travis_time:start:00f19960
+[0K$ docker tag "${IMAGE_NAME}:ci" "${IMAGE_NAME}:${IMAGE_TAG}"
+travis_time:end:00f19960:start=1637618685500156513,finish=1637618685540987437,duration=40830924,event=script
+[0K[32;1mThe command "docker tag "${IMAGE_NAME}:ci" "${IMAGE_NAME}:${IMAGE_TAG}"" exited with 0.[0m
+travis_time:start:13dcb500
+[0K$ docker push "${IMAGE_NAME}:${IMAGE_TAG}"
+The push refers to repository [docker.io/[secure]/litecoin-squid]
+9536a289dbd0: Preparing
+654e6d47f60a: Preparing
+d1956fd6f550: Preparing
+4d982a3d1f5e: Preparing
+9f54eef41275: Preparing
+9f54eef41275: Mounted from library/ubuntu
+d1956fd6f550: Pushed
+654e6d47f60a: Pushed
+4d982a3d1f5e: Pushed
+9536a289dbd0: Pushed
+latest: digest: sha256:4267cc8a44ded75da5798d5deb973f7e707461ea4ff091c3234c519495f7c7af size: 1372
+travis_time:end:13dcb500:start=1637618685548250943,finish=1637618694317142177,duration=8768891234,event=script
+[0K[32;1mThe command "docker push "${IMAGE_NAME}:${IMAGE_TAG}"" exited with 0.[0m
+
+
+Done. Your build exited with 0.
