@@ -1,6 +1,6 @@
 # FROM debian:stable-slim
 # this is the amd64 image: 
-FROM ubuntu:21.04@sha256:0b19ac4988412eaf6ab191ab246d2e1bc9d792ce9a57ef3e97635b41118c4fe9
+FROM ubuntu:20.04@sha256:7cc0576c7c0ec2384de5cbf245f41567e922aab1b075f3e8ad565f508032df17
 # I used the arm one as I am on an M1 mac:
 # FROM ubuntu:20.04@sha256:26c3bd3ae441c873a210200bcbb975ffd2bbf0c0841a4584f4476c8a5b8f3d99
 # FROM debian:stable
