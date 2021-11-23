@@ -107,8 +107,9 @@ Did the same, this time with python. Nothing fancy, using requests and Beautiful
 
 
 ## ex6
-Check `ex6-terraform` folder.  
+Check `ex6-text-manupulation` folder.  
 I did the configuration, module, and added a README for the root and for the module.
+
 ---
 
 ## Notes/Issues:
@@ -117,8 +118,10 @@ I did the configuration, module, and added a README for the root and for the mod
 It was my chance to finally test Travis CI, compared with Jenkins I like how clean Travis syntax looks (and not a fan of json) :P
 
 * Two of the pgp keyservers stopped being resolvable for me so I had to remove them (from the original Dockerfile):
+```
     # gpg --no-tty --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" || \
     # gpg --no-tty --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ; \
+```
 
 * I separated the key fetch commands onto it's own layer as the updates take a while to test, and key servers timeouts meant doing that all over (image is bigger but saves time)
 
