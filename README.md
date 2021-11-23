@@ -1,4 +1,4 @@
-# Exercises from the most feared crypto exchange on the seven seas
+# Technical exercises
 
 ## ex1
 I found the ` uphold/docker-litecoin-core` docker image on Docker Hub.  
