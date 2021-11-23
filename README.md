@@ -1,7 +1,10 @@
 # Exercises from the most feared crypto exchange on the seven seas
 
 ## ex1
-I found the official `litecoin-core` docker image on Docker Hub.
+I found the ` uphold/docker-litecoin-core` docker image on Docker Hub.  
+I had to build it, as the debian images have Critical vulnerabilities - and I wanted to play with it a bit.  
+I used ubuntu 20.04 (LTS) image instead which has newer versions of the packages which fail the scan for the debian one - anchore/grype scans pass :)
+
 For testing the image security with anchore, I first ran `anchore/inline-scan`:
 `sudo docker build -t lite-squid:latest -f Dockerfile .`
 `curl -s https://ci-tools.anchore.io/inline_scan-latest | sudo bash -s -- -f -d Dockerfile lite-squid:latest`
@@ -108,13 +111,10 @@ Check `ex6-terraform` folder.
 I did the configuration, module, and added a README for the root and for the module.
 ---
 
-## Issues:
+## Notes/Issues:
 * Gitlab blocked my account for no reason while just pushing code, which made me waste time switching CI solution -.-
 (I left the .gitlab-ci.yml to show what I was doing. On the includes part, the only one needed was Security/Container-Scanning.gitlab-ci.yml, the rest were what I was testing just for fun as I had just found the templates, and sparked my interest)
 It was my chance to finally test Travis CI, compared with Jenkins I like how clean Travis syntax looks (and not a fan of json) :P
-
-* The litecoin-core image from upbound does not have an arm build, not good for testing on my M1 mac -.-  
-Couple that with no builds in 8 months, no wonder litecoin is not so hot nowadays.
 
 * Two of the pgp keyservers stopped being resolvable for me so I had to remove them (from the original Dockerfile):
     # gpg --no-tty --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" || \
